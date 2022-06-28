@@ -76,7 +76,7 @@ class LoLHelper:
                 result.close()
         else:
             return ""
-
+    
     def delete(self, api: str):
         return requests.delete(
             url = "https://127.0.0.1:%s%s" % (self.port, correct(api)),
@@ -116,7 +116,13 @@ def init():
 
 
 if checkProcessAlive("LeagueClient"):
+    # 初始化LOLHelper类
     lHelper = init()
+    # 获取当前召唤师信息
     print(lHelper.get("lol-summoner/v1/current-summoner"))
+    # 获取当前召唤师生涯信息
+    print(lHelper.get("lol-summoner/v1/current-summoner/summoner-profile"))
+    # 设置生涯背景图片
+    # lHelper.post("lol-summoner/v1/current-summoner/summoner-profile",{"key":"backgroundSkinId","value":"1000"})
 else:
     print("未检测到游戏进程，请先运行游戏")
