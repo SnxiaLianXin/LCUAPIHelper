@@ -1,5 +1,5 @@
 # LOLHelper
-League Of Legends LCU(LegueClient) API usage example.   
+League Of Legends LCU(LegueClientUx) API usage example.   
 英雄联盟客户端API调用示例，调用API时需要先运行游戏并保证RiotClientServices通讯正常。
 你可以通过以下方式确定：
 ```python
