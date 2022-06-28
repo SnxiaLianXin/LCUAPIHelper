@@ -18,5 +18,5 @@ Riot官方的开发者(LOL)文档：
    
 你可以在官方开发者文档里的Data Dragon（数据龙）中找到游戏中基本能看到的所有资源，例如召唤师技能，装备和英雄的图片资源等，Data Dragon会随着游戏版本的更新而更新（也可能提前或延后），Data Dragon是静态的数据，获取Data Dragon数据需要指定游戏版本，你可以通过 (https://ddragon.leagueoflegends.com/api/versions.json) 中第[1]个项、下标[0]来获取当前游戏的的版本。   
    
-还有一件事：用到的第三方库需要自己去下载：requests 和 pustil，嗯、当然你也可以选择其他的。
+还有一件事：用到的第三方库需要自己去下载：requests 和 pustil，嗯、当然你也可以选择其他的。   
 还有一件事：Pycharm会导致游戏弹出非法模块提示，请不要使用Pycharm调试（其他的我没试过）。
