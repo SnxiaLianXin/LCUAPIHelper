@@ -121,7 +121,7 @@ if checkProcessAlive("LeagueClient"):
     # 获取当前召唤师信息
     print(lHelper.get("lol-summoner/v1/current-summoner"))
     # 获取当前召唤师生涯信息
-    print(lHelper.get("lol-summoner/v1/current-summoner/summoner-profile"))
+    # print(lHelper.get("lol-summoner/v1/current-summoner/summoner-profile"))
     # 设置生涯背景图片
     # lHelper.post("lol-summoner/v1/current-summoner/summoner-profile",{"key":"backgroundSkinId","value":"1000"})
 else:
