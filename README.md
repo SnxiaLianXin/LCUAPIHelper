@@ -11,7 +11,7 @@ lHelper.get("riot-messaging-service/v1/state") # 如果返回 "Connected" 则说
 # lHelper = LoLHelper(port,token);
 lHelper.get("lol-summoner/v1/status") # 如果返回 { "ready":true } 则说明登录成功；否则可能登录失败或正在服务器排队队列中。
 ```
-在这之后你可以正常调用LCU API   
+在这之后你可以正常调用LCU API（当然上述情况是先运行程序后运行游戏的情况下要做的，如果是后运行程序你完全可以爱搞不搞）   
 你还可以在以下文档中了解到更多的LCU API：   
 [LCU API文档](https://lcu.vivide.re/)   
 Riot官方的开发者(LOL)文档：   
