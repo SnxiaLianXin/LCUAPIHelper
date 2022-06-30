@@ -11,6 +11,7 @@ class LoLHelper:
     def __init__(self, port: str, token: str):
         self.port = port
         self.token = token
+        # 添加身份验证
         tokens = base64.b64encode(("riot:%s" % token).encode())
         self.author = { "Authorization":"Basic %s" % tokens.decode() }
 
